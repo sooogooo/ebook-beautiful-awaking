@@ -1,0 +1,88 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <title>镜像自我理论模型</title>
+  <desc>展示个体如何通过镜像中的自我来建构自我概念</desc>
+  
+  <!-- Central mirror -->
+  <rect x="150" y="50" width="100" height="150" fill="none" stroke="#333333" stroke-width="1.5" rx="4"/>
+  <line x1="150" y1="50" x2="250" y2="50" stroke="#333333" stroke-width="1.5"/>
+  <line x1="150" y1="200" x2="250" y2="200" stroke="#333333" stroke-width="1.5"/>
+  <line x1="150" y1="50" x2="150" y2="200" stroke="#333333" stroke-width="1.5"/>
+  <line x1="250" y1="50" x2="250" y2="200" stroke="#333333" stroke-width="1.5"/>
+  
+  <!-- Mirror frame corners -->
+  <circle cx="150" cy="50" r="3" fill="#333333"/>
+  <circle cx="250" cy="50" r="3" fill="#333333"/>
+  <circle cx="150" cy="200" r="3" fill="#333333"/>
+  <circle cx="250" cy="200" r="3" fill="#333333"/>
+  
+  <!-- Actual self (left side) -->
+  <g id="actual-self">
+    <circle cx="80" cy="100" r="25" fill="none" stroke="#666666" stroke-width="1"/>
+    <text x="80" y="100" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="300" fill="#333333">真实自我</text>
+    <text x="80" y="115" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="8" font-weight="300" fill="#999999">内在感受</text>
+    <text x="80" y="127" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="8" font-weight="300" fill="#999999">身体体验</text>
+  </g>
+  
+  <!-- Mirror self (right side) -->
+  <g id="mirror-self">
+    <circle cx="320" cy="100" r="25" fill="none" stroke="#666666" stroke-width="1"/>
+    <text x="320" y="100" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="300" fill="#333333">镜像自我</text>
+    <text x="320" y="115" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="8" font-weight="300" fill="#999999">外在形象</text>
+    <text x="320" y="127" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="8" font-weight="300" fill="#999999">社会呈现</text>
+  </g>
+  
+  <!-- Reflection process -->
+  <g id="reflection-process">
+    <!-- Arrows showing reflection -->
+    <path d="M 105 100 L 145 125" stroke="#666666" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 255 125 L 295 100" stroke="#666666" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <!-- Reflection in mirror -->
+    <ellipse cx="200" cy="125" rx="30" ry="40" fill="none" stroke="#999999" stroke-width="0.5" stroke-dasharray="2,1"/>
+    <text x="200" y="125" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="8" font-weight="300" fill="#999999">镜像反射</text>
+    <text x="200" y="137" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="6" font-weight="300" fill="#999999">认知加工</text>
+  </g>
+  
+  <!-- Social comparison (bottom) -->
+  <g id="social-comparison">
+    <rect x="140" y="230" width="120" height="50" fill="none" stroke="#999999" stroke-width="1" rx="3"/>
+    <text x="200" y="250" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="300" fill="#666666">社会比较</text>
+    <text x="200" y="265" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="7" font-weight="300" fill="#999999">上行/下行比较</text>
+    
+    <!-- Connection lines -->
+    <path d="M 200 230 L 200 200" stroke="#999999" stroke-width="0.5" stroke-dasharray="1,2"/>
+  </g>
+  
+  <!-- Internal dialogue (top) -->
+  <g id="internal-dialogue">
+    <rect x="140" y="10" width="120" height="30" fill="none" stroke="#999999" stroke-width="1" rx="3"/>
+    <text x="200" y="25" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="300" fill="#666666">内在对话</text>
+    <text x="200" y="37" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="7" font-weight="300" fill="#999999">自我评估</text>
+    
+    <!-- Connection lines -->
+    <path d="M 200 40 L 200 50" stroke="#999999" stroke-width="0.5" stroke-dasharray="1,2"/>
+  </g>
+  
+  <!-- Feedback loop -->
+  <g id="feedback-loop">
+    <path d="M 320 75 Q 360 50 320 25 Q 280 10 240 25 Q 200 40 200 10" 
+          stroke="#999999" stroke-width="0.5" fill="none" stroke-dasharray="2,1"/>
+    <text x="280" y="15" font-family="Helvetica Neue, Arial, sans-serif" font-size="6" font-weight="300" fill="#999999">反馈循环</text>
+  </g>
+  
+  <!-- Define arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666666"/>
+    </marker>
+  </defs>
+  
+  <!-- Key process indicators -->
+  <g id="indicators">
+    <circle cx="200" cy="125" r="2" fill="#333333">
+      <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

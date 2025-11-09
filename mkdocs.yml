@@ -119,6 +119,7 @@ copyright: Copyright © 2025 射频细胞 | 美的觉醒 | 京 ICP 备 20009050 
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/mermaid-monochrome.css
 
 extra_javascript:
   - javascripts/extra.js

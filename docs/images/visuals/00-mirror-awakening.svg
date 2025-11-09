@@ -1,36 +1,35 @@
 <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="300" height="400" fill="#f8f9fa"/>
+  <title>爱美之心的觉醒</title>
+  <desc>一面镜子，映照出内在自我与外在形象的对话</desc>
   
   <!-- Mirror frame -->
-  <rect x="50" y="50" width="200" height="250" fill="none" stroke="#2c3e50" stroke-width="3"/>
+  <rect x="50" y="50" width="200" height="250" fill="none" stroke="#333333" stroke-width="1.5" rx="2"/>
   
-  <!-- Mirror surface -->
-  <rect x="55" y="55" width="190" height="240" fill="#e8f4f8"/>
+  <!-- Mirror surface reflection -->
+  <ellipse cx="150" cy="175" rx="60" ry="80" fill="none" stroke="#999999" stroke-width="1" stroke-dasharray="2,2"/>
   
-  <!-- Reflection ellipse -->
-  <ellipse cx="150" cy="175" rx="60" ry="80" fill="none" stroke="#74c0fc" stroke-width="2" opacity="0.7"/>
+  <!-- Simple figure outline -->
+  <circle cx="150" cy="120" r="8" fill="none" stroke="#666666" stroke-width="1"/>
+  <path d="M 150 128 L 150 148 M 138 136 L 162 136 M 138 148 L 138 168 M 162 148 L 162 168" 
+        stroke="#666666" stroke-width="1" fill="none" stroke-linecap="round"/>
   
-  <!-- Simple figure -->
-  <circle cx="150" cy="120" r="12" fill="#495057"/>
-  <path d="M 150 132 L 150 155 M 135 140 L 165 140 M 135 155 L 135 180 M 165 155 L 165 180" 
-        stroke="#495057" stroke-width="3" fill="none"/>
+  <!-- Mirror reflection figure -->
+  <circle cx="150" cy="200" r="8" fill="none" stroke="#999999" stroke-width="0.5" stroke-dasharray="1,1"/>
+  <path d="M 150 208 L 150 228 M 138 216 L 162 216 M 138 228 L 138 248 M 162 228 L 162 248" 
+        stroke="#999999" stroke-width="0.5" fill="none" stroke-linecap="round" stroke-dasharray="1,1"/>
   
   <!-- Corner decorations -->
-  <circle cx="50" cy="50" r="4" fill="#2c3e50"/>
-  <circle cx="250" cy="50" r="4" fill="#2c3e50"/>
-  <circle cx="50" cy="300" r="4" fill="#2c3e50"/>
-  <circle cx="250" cy="300" r="4" fill="#2c3e50"/>
+  <circle cx="50" cy="50" r="2" fill="#333333"/>
+  <circle cx="250" cy="50" r="2" fill="#333333"/>
+  <circle cx="50" cy="300" r="2" fill="#333333"/>
+  <circle cx="250" cy="300" r="2" fill="#333333"/>
   
-  <!-- Sparkles -->
-  <circle cx="30" cy="30" r="3" fill="#ffd43b"/>
-  <circle cx="270" cy="35" r="3" fill="#ffd43b"/>
-  <circle cx="35" cy="200" r="3" fill="#ffd43b"/>
-  <circle cx="265" cy="220" r="3" fill="#ffd43b"/>
+  <!-- Connection lines between figures -->
+  <path d="M 150 128 L 150 192" stroke="#999999" stroke-width="0.5" stroke-dasharray="1,2"/>
   
   <!-- Title -->
-  <text x="150" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">爱美之心的觉醒</text>
+  <text x="150" y="30" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="300" fill="#333333">爱美之心的觉醒</text>
   
   <!-- Subtitle -->
-  <text x="150" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#495057">在进化与美学的交汇处，发现爱美之心的真相</text>
+  <text x="150" y="370" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="300" fill="#666666">在进化与美学的交汇处，发现爱美之心的真相</text>
 </svg>
