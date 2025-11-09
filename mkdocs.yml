@@ -1,0 +1,124 @@
+site_name: 美的觉醒
+site_description: 积极心理学视角下的现代女性与专业咨询师成长指南
+site_author: 美的觉醒
+site_url: https://example.com
+
+
+nav:
+  - 首页: index.md
+  - 第一部分：美的心理学:
+    - 第1章: part1/chapter1.md
+    - 第2章: part1/chapter2.md
+    - 第3章: part1/chapter3.md
+  - 第二部分：理性的美丽:
+    - 第4章: part2/chapter4.md
+    - 第5章: part2/chapter5.md
+    - 第6章: part2/chapter6.md
+  - 第三部分：实践的智慧:
+    - 第7章: part3/chapter7.md
+    - 第8章: part3/chapter8.md
+    - 第9章: part3/chapter9.md
+    - 第10章: part3/chapter10.md
+  - 第四部分：美的升华:
+    - 第11章: part4/chapter11.md
+    - 第12章: part4/chapter12.md
+    - 第13章: part4/chapter13.md
+
+theme:
+  name: material
+  language: zh
+  logo: images/logo.png
+  favicon: images/favicon.png
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.prune
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tabs.link
+    - header.autohide
+    - toc.follow
+    - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: pink
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: pink
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: 切换到浅色模式
+
+plugins:
+  - search:
+      separator: '[\s\u3002\uff0c\uff1b\uff1a\u201c\u201d\u2018\u2019\u2014\u3010\u3011\u300a\u300b\u3008\u3009\u300c\u300d\u300e\u300f\u2010\u2013\u2014\uff08\uff09\u3014\u3015\uff3b\uff3d\u3016\u3017\u3018\u3019\u301a\u301b\u301c\u301d\u301e\u301f\uff5b\uff5d\uff5e\uff09\u2026\u2014\u00b7\u2022\u2023\u25cf\u25cb\u25ce\u25a0\u25a1\u25b2\u25b3\u25bc\u25bd\u25c6\u25c7\u25aa\u25ab\u25ac\u25ad\u25ae\u25af\u25b0\u25b1\u25b6\u25b7\u25b8\u25b9\u25ba\u25bb\u25bc\u25bd\u25be\u25bf\u25c0\u25c1\u25c2\u25c3\u25c4\u25c5\u25c6\u25c7\u25c8\u25c9\u25ca\u25cb\u25cc\u25cd\u25ce\u25cf\u25d0\u25d1\u25d2\u25d3\u25d4\u25d5\u25d6\u25d7\u25d8\u25d9\u25da\u25db\u25dc\u25dd\u25de\u25df\u25e0\u25e1\u25e2\u25e3\u25e4\u25e5\u25e6\u25e7\u25e8\u25e9\u25ea\u25eb\u25ec\u25ed\u25ee\u25ef\u25f0\u25f1\u25f2\u25f3\u25f4\u25f5\u25f6\u25f7\u25f8\u25f9\u25fa\u25fb\u25fc\u25fd\u25fe\u25ff]'
+  - mermaid2
+  - markdownextradata
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - codehilite:
+      guess_lang: false
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.escapeall
+  - pymdownx.saneheaders
+  - pymdownx.snippets
+  - pymdownx.striphtml
+  - pymdownx.blocks.caption
+  - pymdownx.blocks.details
+
+copyright: Copyright © 2025 射频细胞 | 美的觉醒 | 京 ICP 备 20009050 号-3 | 联系信息：yuxiaodong@beaucare.org @sooogooo
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js

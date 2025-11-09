@@ -1,0 +1,53 @@
+<svg viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Starting point -->
+  <circle cx="50" cy="60" r="6" fill="#666" opacity="0.8"/>
+  <text x="50" y="64" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">起</text>
+  
+  <!-- Path 1: Consumerism (horizontal left) -->
+  <path d="M 56 60 L 90 60" stroke="#999" stroke-width="1" fill="none"/>
+  <rect x="90" y="55" width="50" height="10" fill="none" stroke="#666" stroke-width="0.5"/>
+  <text x="115" y="62" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#333">消费主义</text>
+  
+  <!-- Path 1 end -->
+  <path d="M 140 60 L 155 60" stroke="#ccc" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <circle cx="160" cy="60" r="3" fill="#333"/>
+  <text x="115" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#666">焦虑循环</text>
+  
+  <!-- Path 2: Asceticism (diagonal down-right) -->
+  <path d="M 56 60 L 56 85 L 85 105" stroke="#999" stroke-width="1" fill="none"/>
+  <rect x="85" y="100" width="50" height="10" fill="none" stroke="#666" stroke-width="0.5"/>
+  <text x="110" y="107" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#333">禁欲主义</text>
+  
+  <!-- Path 2 end -->
+  <path d="M 135 105 L 150 115" stroke="#ccc" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <circle cx="155" cy="118" r="3" fill="#333"/>
+  <text x="110" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#666">压抑天性</text>
+  
+  <!-- Path 3: Third Way (curved upward) -->
+  <path d="M 56 60 L 56 90 Q 56 120 70 140 Q 85 165 105 185 Q 125 210 145 240" 
+        stroke="#999" stroke-width="1.5" fill="none"/>
+  <rect x="120" y="235" width="60" height="10" fill="none" stroke="#666" stroke-width="0.5"/>
+  <text x="150" y="242" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#333">第三条道路</text>
+  
+  <!-- Path 3 success -->
+  <path d="M 145 240 L 155 260" stroke="#999" stroke-width="1.5" fill="none"/>
+  <circle cx="155" cy="265" r="6" fill="#666" opacity="0.8"/>
+  <text x="155" y="269" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">醒</text>
+  
+  <!-- Subtle star -->
+  <path d="M 155 255 L 156 258 L 159 258 L 157 260 L 158 263 L 155 261 L 152 263 L 153 260 L 151 258 L 154 258 Z" 
+        fill="none" stroke="#666" stroke-width="0.5" opacity="0.7"/>
+  
+  <!-- Elegant divider -->
+  <line x1="30" y1="300" x2="170" y2="300" stroke="#ddd" stroke-width="0.5"/>
+  
+  <!-- Bottom text -->
+  <text x="100" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#666">消费主义与禁欲主义之外</text>
+  <text x="100" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#666">还有第三条道路</text>
+  
+  <!-- Subtle decorative elements -->
+  <circle cx="35" cy="40" r="1" fill="#999" opacity="0.4"/>
+  <circle cx="165" cy="45" r="1" fill="#999" opacity="0.4"/>
+  <circle cx="40" cy="280" r="1" fill="#999" opacity="0.4"/>
+  <circle cx="160" cy="285" r="1" fill="#999" opacity="0.4"/>
+</svg>

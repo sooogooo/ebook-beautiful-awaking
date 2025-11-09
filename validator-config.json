@@ -1,0 +1,66 @@
+{
+  "name": "Markdown格式验证器",
+  "version": "1.0.0",
+  "description": "专门用于发现和处理中文内容中的markdown格式问题",
+  "author": "Claude",
+  "language": "zh-CN",
+  "features": {
+    "validation": {
+      "unresolved_bold": "检测未解析的粗体标记",
+      "unresolved_italic": "检测未解析的斜体标记",
+      "mixed_markers": "检测混合的粗体/斜体标记",
+      "chinese_quote_issues": "检测中文引号与粗体标记组合问题",
+      "html_context_issues": "检测HTML上下文中的markdown问题",
+      "escaped_markers": "检测转义的markdown标记",
+      "nested_markers": "检测嵌套的markdown标记"
+    },
+    "auto_fix": {
+      "escaped_markers": "自动移除不必要的转义",
+      "simple_bold": "修复简单的粗体标记问题"
+    },
+    "reporting": {
+      "formats": ["text", "json", "html"],
+      "statistics": true,
+      "context": true,
+      "suggestions": true
+    }
+  },
+  "usage": {
+    "basic": "python3 markdown-validator.py <path>",
+    "recursive": "python3 markdown-validator.py <directory> --recursive",
+    "html_report": "python3 markdown-validator.py <path> --format html --output report.html",
+    "auto_fix": "python3 markdown-validator.py <path> --fix",
+    "dry_run": "python3 markdown-validator.py <path> --dry-run"
+  },
+  "common_issues": {
+    "unresolved_bold": {
+      "description": "粗体标记 **text** 没有被正确渲染为 <strong> 标签",
+      "causes": [
+        "MkDocs配置问题",
+        "中文标点符号干扰",
+        "HTML上下文冲突",
+        "markdown扩展配置错误"
+      ],
+      "solutions": [
+        "检查mkdocs.yml中的markdown_extensions配置",
+        "验证pymdownx.betterem扩展是否启用",
+        "检查中文分词器配置",
+        "确保正确使用pymdownx.escapeall扩展"
+      ]
+    },
+    "chinese_punctuation": {
+      "description": "中文标点符号与markdown标记的交互问题",
+      "common_patterns": [
+        "**\"中文引号\"**",
+        "**'中文单引号'**",
+        "**中文逗号，**",
+        "**中文句号。**"
+      ],
+      "recommendations": [
+        "确保引号在粗体标记内正确闭合",
+        "检查中文分词器配置",
+        "使用适当的markdown扩展处理中文内容"
+      ]
+    }
+  }
+}
